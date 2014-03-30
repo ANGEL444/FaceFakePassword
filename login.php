@@ -1,5 +1,8 @@
 ﻿<?php
 //--------------------------------------//
+/**
+ * @author Brandon G.
+ */
 #Aqui capturamos los datos de los campos// 
  $contraseña = $_POST['password'];      //
  $fecha = date('d-m-y');                //
