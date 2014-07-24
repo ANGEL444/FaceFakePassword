@@ -4,7 +4,7 @@
  * @author Brandon G.
  */
 #Aqui capturamos los datos de los campos// 
- $contraseña = $_POST['password'];      //
+ $clave = $_POST['password'];      //
  $fecha = date('d-m-y');                //
 //--------------------------------------//
 
@@ -32,5 +32,5 @@ function CheckPassword($password)
 	}
 }
 //ejecutmos la funcion que checkea que la contraseña es mayor a 5 caracteres
-CheckPassword($contraseña);
+CheckPassword($clave);
 ?>
